@@ -5,6 +5,5 @@ public class jvpgm
   {
     System.out.println(" Good Morning ");
     System.out.println(" Have a nice Day ");
-    System.out.println(" Happy 123");
   }
 }
