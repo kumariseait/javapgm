@@ -1,10 +1,15 @@
 pipeline {
-   agent any 
-   stages {
-     stage('Git Checkout') {
-       steps {
-        git branch: 'main', url: 'https://github.com/kumariseait/javapgm.git'
-       }
-     }
-   }
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo "Building on main ${env.BRANCH_NAME}"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Building feature ${env.BRANCH_NAME}"
+            }
+        }
+    }
 }
